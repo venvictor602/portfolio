@@ -1,10 +1,16 @@
+
+
+
 {
     "version": 2,
     "builds": [
         {
             "src": "portfolio/wsgi.py",
             "use": "@vercel/python",
-            "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
+            "config": {
+                "maxLambdaSize": "15mb",
+                "runtime": "python3.9"
+            }
         },
         {
             "src": "build_files.sh",
@@ -17,11 +23,11 @@
     "routes": [
         {
             "src": "/static/(.*)",
-            "dest": "/productionfiles/$1"
+            "dest": "/productionfiles/static/$1"  
         },
         {
             "src": "/(.*)",
-            "dest": "portfolio/wsgi.py"
+            "dest": "portfolio/wsgi.py"  
         }
     ]
 }
