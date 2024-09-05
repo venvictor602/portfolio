@@ -22,6 +22,5 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'portfolio.settings')
 
 application = get_wsgi_application()
 
-# Vercel expects 'handler' or 'app', so alias 'application' as 'handler'
-handler = application
+
 app = application
