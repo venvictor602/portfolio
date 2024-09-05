@@ -1,6 +1,3 @@
-
-
-
 {
     "version": 2,
     "builds": [
@@ -16,14 +13,14 @@
             "src": "build_files.sh",
             "use": "@vercel/static-build",
             "config": {
-                "distDir": "productionfiles"
+                "distDir": "productionfiles"  
             }
         }
     ],
     "routes": [
         {
             "src": "/static/(.*)",
-            "dest": "/productionfiles/static/$1"  
+            "dest": "/productionfiles/$1"  
         },
         {
             "src": "/(.*)",
