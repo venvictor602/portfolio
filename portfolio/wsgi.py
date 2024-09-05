@@ -24,3 +24,4 @@ application = get_wsgi_application()
 
 # Vercel expects 'handler' or 'app', so alias 'application' as 'handler'
 handler = application
+app = application
