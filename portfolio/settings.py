@@ -80,8 +80,7 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 #         'ENGINE': 'django.db.backends.sqlite3',
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
-# }PGPASSWORD=qPjWSYvyeXisGRHNJUTbkMWGREFffrrS psql -h autorack.proxy.rlwy.net -U postgres -p 49381 -d railway
-
+# }PGPASSWORD=JGXVHmVnPuInvBJbvWNwKqRxnMPBuZOg psql -h autorack.proxy.rlwy.net -U postgres -p 14009 -d railway
 
 DATABASES = {
     'default': {
@@ -89,9 +88,9 @@ DATABASES = {
         # 'URL': 'postgresql://postgres:pv2gQE4m0nhX5oSSZkFt@containers-us-west-163.railway.app:7827/railway',
         'NAME': 'railway',
         'USER': 'postgres',
-        'PASSWORD': 'qPjWSYvyeXisGRHNJUTbkMWGREFffrrS',
+        'PASSWORD': 'JGXVHmVnPuInvBJbvWNwKqRxnMPBuZOg',
         'HOST': 'autorack.proxy.rlwy.net',
-        'PORT': '49381',
+        'PORT': '14009',
     }
 }
 
